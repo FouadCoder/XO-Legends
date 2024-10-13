@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding doesn't add to the width */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: black;
+  margin: 0;
+  height: 100vh; /* Full height of the viewport */
   display: flex;
-  flex-direction: column;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+}
+
+.App {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  background-color: #6907F2;
+  margin: 0;
+  padding: 0;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 20px;
+}
+
+.ContainerXO{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: auto;
+}
+
+.XObuton {
+  height: 150px;
+  width: 150px;
+  background-color: #0D0D0D;
   color: white;
+  font-size: 60px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.TEXT {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playAgainbutton{
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background-color: #6907F2;
+  border-radius: 10px;
 }
+
+.gameHead {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+
+
+
+
