@@ -42,7 +42,7 @@ function App() {
     if(checkValues && !winner){
       const timer = setTimeout(playAgain , 400);
     }
-  },[valueGame , winner]) // !  This Line me it will work wehn changes happen in value game or winner 
+  },[valueGame , winner]) // !  This Line will work when changes happen in value game or winner 
 
   // Play Again
   function playAgain(){
